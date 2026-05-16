@@ -2,8 +2,12 @@ name: Build Mod
 
 on:
   push:
-  pull_request:
+    tags:
+      - "v*"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -25,8 +29,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Upload jar
-        uses: actions/upload-artifact@v4
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: mod-jar
-          path: build/libs/*.jar
+          files: build/libs/*.jar
