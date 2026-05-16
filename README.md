@@ -1,12 +1,10 @@
-
-
 # **Doggo Mod Overhauled Continued**
 **This is a community continuation fork of Doggo Mod Overhauled.**
 **Original project by MrKacafirekCZ.**
 **Licensed under GPL-3.0.**
 
 
-Doggo Mod Overhauled is a mod that just makes dogs better by adding personality, dog bowls for dogs to eat from and a little tennis ball to play fetch.  This is the continued version of [doggo-mod-overhauled](https://github.com/MrKacafirekCZ/doggo-mod-overhauled)
+Doggo Mod Overhauled is a mod that just makes dogs better by adding personality, dog bowls for dogs to eat from, a little tennis ball to play fetch, and much more. This is the continued version of [doggo-mod-overhauled](https://github.com/MrKacafirekCZ/doggo-mod-overhauled)
 It is a complete rewrite of the mod [Doggo Mod](https://www.curseforge.com/minecraft/mc-mods/doggo-mod "Doggo Mod") and fixes various bugs such as Multiplayer compatibility.  
 ![Imgur](https://imgur.com/qZty4EZ.jpg)  
 
@@ -52,7 +50,7 @@ A dog can hold an item in its mouth at any time. Dogs prefer food over weapons i
 ![Imgur](https://imgur.com/mO8guVw.jpg)
 
 ### <ins>Napping</ins>
-If you leave a dog sitting and walk a way, it will lay down and take a nap.  
+If you leave a dog sitting and walk away, it will lay down and take a nap.  
 ![Imgur](https://imgur.com/meL0KBD.jpg)  
 
 ### <ins>Playing fetch</ins>
@@ -104,6 +102,11 @@ You can also recolor the tennis ball.
 - [Fabric](https://fabricmc.net/use/ "Fabric")
 - [Fabric API](https://modrinth.com/mod/fabric-api)
 
+## Discussions, Comments, etc
+Discuss and vote on features [here](https://github.com/Owenb135/Doggo-mod-overhauled-continued/discussions).
+
+Please keep discussions respectful and constructive.
+
 ## **Optional mods / Tested mods**
 - [Jade](https://modrinth.com/mod/jade)
 - [Mod Menu](https://modrinth.com/mod/modmenu)
@@ -117,9 +120,6 @@ Special thanks to kaprai for creating the doggo logo. [kaprai's Twitter](https:/
 - [CapoFantasma97](https://github.com/CapoFantasma97) (Italian translation [#4](https://github.com/MrKacafirekCZ/doggo-mod-overhauled/pull/4))
 - [Fuzss](https://github.com/Fuzss) (Fixed compatibility with PuzzleLib mod [#28](https://github.com/MrKacafirekCZ/doggo-mod-overhauled/pull/28))
 - [domesios](https://github.com/domesios) (German translation [#42](https://github.com/MrKacafirekCZ/doggo-mod-overhauled/pull/42))
-
-## **Discussions**
-Discuss and vote on features [here](https://github.com/MrKacafirekCZ/doggo-mod-overhauled/discussions).
 
 ## **Other**
 This mod has been inspired by other mods (e.g. [Improved Wolves](https://mrcrayfish.com/mods?id=improvedwolves "Improved Wolves") by MrCrayfish)
