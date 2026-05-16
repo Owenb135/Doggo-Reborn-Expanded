@@ -123,3 +123,6 @@ Discuss and vote on features [here](https://github.com/MrKacafirekCZ/doggo-mod-o
 
 ## **Other**
 This mod has been inspired by other mods (e.g. [Improved Wolves](https://mrcrayfish.com/mods?id=improvedwolves "Improved Wolves") by MrCrayfish)
+
+## **Workflows**
+[![Build Mod](https://github.com/Owenb135/Doggo-mod-overhauled-continued/actions/workflows/gradle.yml/badge.svg)](https://github.com/Owenb135/Doggo-mod-overhauled-continued/actions/workflows/gradle.yml)
