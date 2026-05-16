@@ -2,12 +2,11 @@ name: Build Mod
 
 on:
   push:
-    tags:
-      - "v*"
+  pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
@@ -29,7 +28,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
+      - name: Rename JAR with commit SHA
+        run: |
+          mkdir -p output
+          cp build/libs/*.jar output/mod-${{ github.run_number }}-${{ github.sha }}.jar
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
         with:
-          files: build/libs/*.jar
+          name: doggo-mod-build
+          path: output/*.jar
