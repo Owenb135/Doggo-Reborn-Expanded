@@ -1,0 +1,11 @@
+name: "CodeQL Config"
+
+queries:
+  - uses: security-and-quality
+
+paths-ignore:
+  - build
+  - .gradle
+
+# IMPORTANT: use proper build mode
+build-mode: autobuild
