@@ -1,7 +1,12 @@
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K1FR5YI)
 
-# **Doggo Mod Overhauled**
-Doggo Mod Overhauled is a mod that just makes dogs better by adding personality, dog bowls for dogs to eat from and a little tennis ball to play fetch.  
+
+# **Doggo Mod Overhauled Continued**
+**This is a community continuation fork of Doggo Mod Overhauled.**
+**Original project by MrKacafirekCZ.**
+**Licensed under GPL-3.0.**
+
+
+Doggo Mod Overhauled is a mod that just makes dogs better by adding personality, dog bowls for dogs to eat from and a little tennis ball to play fetch.  This is the continued version of [doggo-mod-overhauled](https://github.com/MrKacafirekCZ/doggo-mod-overhauled)
 It is a complete rewrite of the mod [Doggo Mod](https://www.curseforge.com/minecraft/mc-mods/doggo-mod "Doggo Mod") and fixes various bugs such as Multiplayer compatibility.  
 ![Imgur](https://imgur.com/qZty4EZ.jpg)  
 
