@@ -3,11 +3,17 @@
   "id": "doggomodoverhauled",
   "version": "${version}",
 
-  "name": "Doggo Mod Overhauled",
-  "description": "Doggo Mod Overhauled is a Minecraft mod that just makes dogs better.",
+  "name": "Doggo-Reborn-Expaanded",
+  "description": "Doggo Reborn Expanded is a Minecraft mod that just makes dogs better.",
   "authors": [
     {
-      "name": "LordMrK - The Developer",
+      "name": "Owenb135 - The Mod Developer | Maintainer",
+      "contact": {
+        "homepage": "https://ko-fi.com/lordmrk"
+      }
+    },
+    {
+      "name": "LordMrk - The Developer",
       "contact": {
         "homepage": "https://ko-fi.com/lordmrk"
       }
@@ -44,6 +50,7 @@
         "homepage": "https://github.com/domesios"
       }
     }
+    
   ],
   "contact": {
     "issues": "https://github.com/MrKacafirekCZ/doggo-mod-overhauled/issues",
