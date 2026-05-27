@@ -1,4 +1,4 @@
-# **Doggo Mod Overhauled Continued**
+# **Doggo Reborn Expanded**
 **This is a community continuation fork of Doggo Mod Overhauled.**
 **Original project by MrKacafirekCZ.**
 **Licensed under GPL-3.0.**
