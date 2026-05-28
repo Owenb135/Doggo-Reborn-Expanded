@@ -91,6 +91,8 @@ public class DoggoEntity extends TameableEntity implements Angerable {
     private int mouthOpenedTick;
     private boolean readyToPlay = false;
     private Map<DoggoAction, DoggoGoalData> goalDataMap;
+    private int pettingTick = 0;
+    private static final int PETTING_DURATION = 60;
 
     public DoggoEntity(EntityType<? extends DoggoEntity> entityType, World world) {
         super(entityType, world);
@@ -407,6 +409,13 @@ public class DoggoEntity extends TameableEntity implements Angerable {
             return ActionResult.SUCCESS;
         }
 
+        // Try petting when hand is empty
+        if (!player.isSneaking() && itemStack.isEmpty()) {
+            if (this.interactMobPetting(player)) {
+                return ActionResult.SUCCESS;
+            }
+        }
+
         this.interactMobSit();
         return ActionResult.SUCCESS;
     }
@@ -492,6 +501,27 @@ public class DoggoEntity extends TameableEntity implements Angerable {
         this.jumping = false;
         this.navigation.stop();
         this.setTarget(null);
+    }
+
+    private boolean interactMobPetting(PlayerEntity player) {
+        // Only work when dog is neutral and owner is interacting
+        if (!isAction(DoggoAction.NEUTRAL)) {
+            return false;
+        }
+
+        if (!this.isOwner(player)) {
+            return false;
+        }
+
+        // Set the dog to petting action
+        this.setAction(DoggoAction.PETTING);
+        this.setFeeling(DoggoFeeling.HAPPY);
+        this.pettingTick = 0;
+        
+        // Play a happy sound
+        this.playSound(SoundEvents.ENTITY_WOLF_WHINE, 0.5F, 1.0F);
+        
+        return true;
     }
 
     public boolean isBreedingItem(Item item) {
@@ -805,6 +835,17 @@ public class DoggoEntity extends TameableEntity implements Angerable {
     @Override
     public void tick() {
         super.tick();
+        
+        // Handle petting duration
+        if (!this.getWorld().isClient && this.isAction(DoggoAction.PETTING)) {
+            this.pettingTick++;
+            if (this.pettingTick >= PETTING_DURATION) {
+                this.setAction(DoggoAction.NEUTRAL);
+                this.setFeeling(DoggoFeeling.NEUTRAL);
+                this.pettingTick = 0;
+            }
+        }
+        
         if (!this.getWorld().isClient && this.getTarget() != null && this.getTarget().isAlive()) {
             if (this.isInSittingPose() || this.isSitting()) {
                 this.setInSittingPose(false);

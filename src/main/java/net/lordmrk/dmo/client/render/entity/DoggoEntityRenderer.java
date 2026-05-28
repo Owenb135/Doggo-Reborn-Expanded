@@ -40,6 +40,7 @@ public class DoggoEntityRenderer extends MobEntityRenderer<DoggoEntity, DoggoEnt
         this.doggoModels.put(DoggoAction.PLAY_TIME, new DoggoModelReadyPlayTime(context.getPart(DoggoModOverhauledClient.DOGGO)));
         this.doggoModels.put(DoggoAction.SCRATCHING, new DoggoModelScratching(context.getPart(DoggoModOverhauledClient.DOGGO)));
         this.doggoModels.put(DoggoAction.SNIFFING, new DoggoModelSniffing(context.getPart(DoggoModOverhauledClient.DOGGO)));
+        this.doggoModels.put(DoggoAction.PETTING, new DoggoModelNeutral(context.getPart(DoggoModOverhauledClient.DOGGO)));
         this.doggoModels.put(DoggoAction.STRETCHING, new DoggoModelStretching(context.getPart(DoggoModOverhauledClient.DOGGO)));
     }
 

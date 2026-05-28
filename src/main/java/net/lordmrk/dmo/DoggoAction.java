@@ -8,6 +8,7 @@ public enum DoggoAction {
 	LISTENING,
 	NAPPING,
 	NEUTRAL,
+	PETTING,
 	PLAY_IN_SNOW,
 	PLAY_TIME,
 	SCRATCHING,
