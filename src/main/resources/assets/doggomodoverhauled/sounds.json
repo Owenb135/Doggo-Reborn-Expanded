@@ -1,0 +1,10 @@
+{
+  "petting": {
+    "sounds": [
+      {
+        "name": "doggomodoverhauled:petting",
+        "stream": false
+      }
+    ]
+  }
+}

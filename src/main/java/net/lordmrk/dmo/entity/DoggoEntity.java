@@ -518,8 +518,8 @@ public class DoggoEntity extends TameableEntity implements Angerable {
         this.setFeeling(DoggoFeeling.HAPPY);
         this.pettingTick = 0;
         
-        // Play a happy sound
-        this.playSound(SoundEvents.ENTITY_WOLF_WHINE, 0.5F, 1.0F);
+        // Play a happy petting sound
+        this.playSound(DoggoModOverhauled.PETTING_SOUND, 0.5F, 1.0F);
         
         return true;
     }
