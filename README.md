@@ -1,3 +1,4 @@
+[![mod](https://cdn2.steamgriddb.com/grid/c7682dcb150d0de03b31369f73270243.png)](https://modrinth.com/mod/doggo-reborn-expanded)
 # **Doggo Reborn Expanded**
 **This is a community continuation fork of Doggo Mod Overhauled.**
 **Original project by MrKacafirekCZ.**
